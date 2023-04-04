@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:text="Contacts Manager"></TextView>
+                <Button
+                    android:id="@+id/show_fields_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="SHOW ADDITIONAL FIELDS"></Button>
+                <EditText
+                    android:hint="name"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:hint="phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:enabled="false"></EditText>
+                <EditText
+                    android:id="@+id/email"
+                    android:hint="email"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"></EditText>
+                <EditText
+                    android:id="@+id/address"
+                    android:hint="address"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"></EditText>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:rowCount="1"
+                    android:columnCount="2">
+                    <Button
+                        android:id="@+id/save_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:text="SAVE"></Button>
+                    <Button
+                        android:id="@+id/cancel_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="CANCEL"></Button>
+                </GridLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <EditText
+                    android:id="@+id/job"
+                    android:hint="Job Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"></EditText>
+                <EditText
+                    android:id="@+id/company"
+                    android:hint="Company"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"></EditText>
+                <EditText
+                    android:id="@+id/website"
+                    android:hint="Website"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"></EditText>
+                <EditText
+                    android:id="@+id/im"
+                    android:hint="IM"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"></EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
